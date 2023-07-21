@@ -108,4 +108,8 @@ input[type='button']{
     .mainLeft{
         margin: 1.5rem auto;
     }
+    .calBox{
+        width: 22rem;
+        margin: 1rem auto;
+    }
 }

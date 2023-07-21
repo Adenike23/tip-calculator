@@ -12,8 +12,8 @@ total.addEventListener('click', function() {
         bill.value.textContent = ''
         selectTip.value.textContent = ''
         noOfPeople.value.textContent = ''
-} else if (noOfPeople.value === 0) {
-    textWarning.style.display = 'block'
+// } else if (noOfPeople.value === 0) {
+//     textWarning.style.display = 'block'
 }
 
 const cal = (bill.value)/(selectTip.value)/(noOfPeople.value);

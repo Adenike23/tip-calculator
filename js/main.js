@@ -16,7 +16,8 @@ total.addEventListener('click', function() {
 //     textWarning.style.display = 'block'
 }
 
-const cal = (bill.value)/(selectTip.value)/(noOfPeople.value);
+const a = (selectTip.value/100) * bill.value
+const cal = a/(noOfPeople.value);
 tipAnswer.textContent = `${cal}`
 const cal2 = bill.value/noOfPeople.value;
 const cal3 = cal2 + cal;

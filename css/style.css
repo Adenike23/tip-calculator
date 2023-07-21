@@ -103,13 +103,16 @@ input[type='button']{
 @media screen and (max-width:992px) {
     main{
         grid-template-columns: repeat(1, 1fr);
-        width: 35rem;
+        width: 34rem;
     }
     .mainLeft{
         margin: 1.5rem auto;
     }
     .calBox{
-        width: 22rem;
+        width: 25rem;
         margin: 1rem auto;
+    }
+    .amount{
+        gap: 5rem;
     }
 }

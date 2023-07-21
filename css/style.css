@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+}
+:root{
+    --strong-cyan: hsl(172, 67%, 45%);
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-greyish-cyan: hsl(186, 14%, 43%);
+    --greyish-cyan: hsl(184, 14%, 56%);
+    --light-greyish-cyan: hsl(185, 41%, 84%);
+    --very-light-greyish-cyan: hsl(189, 41%, 97%);
+    --white: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--light-greyish-cyan)
+}
+main{
+    background-color: white;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-radius: 10px;
+    width: 60rem;
+    margin: 5rem auto;
+}
+::placeholder{
+    text-align: right;
+}
+.mainLeft{
+    margin: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 19px;
+    width: 17rem;
+}
+label{
+    opacity: .4;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+input[type='text'] {
+    padding:  5px 10px;
+}
+input{
+    all: unset;
+    border: 2px solid var(--light-greyish-cyan);
+    background-color: var(--light-greyish-cyan);
+    border-radius: 5px;
+}
+.small{
+    /* font-size: 10px;
+    color: rgb(143, 48, 48);
+    margin: 3px 0 0 5px;
+    display: none; */
+}
+.calBox{
+    background-color: var(--very-dark-cyan);
+    border-radius: 10px;
+    padding: 3rem 2rem;
+}
+.amount{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+}
+.amount h1{
+    color: var(--strong-cyan);
+    font-size: 38px;
+}
+.text{
+    color: white;
+}
+.text h2{
+    font-size: 22px;
+}
+.text h3{
+    margin-top: 5px;
+    opacity: 0.4;
+}
+input[type='text']:hover{
+    border-color: var(--very-dark-cyan);
+}
+.sum:hover{
+    background-color: var(--strong-cyan)
+}
+input[type='button']{
+    display: block;
+    width: 100%;
+    font-size: 19px;
+    padding: 4px 0;
+    border-radius: 7px;
+    margin-top: 10px;
+    border-color: var(--very-dark-cyan);
+    text-align: center;
+    color: var(--very-dark-cyan);
+    cursor: pointer;
+}
+@media screen and (max-width:992px) {
+    main{
+        grid-template-columns: repeat(1, 1fr);
+        width: 35rem;
+    }
+    .mainLeft{
+        margin: 1.5rem auto;
+    }
+}

@@ -28,7 +28,7 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-radius: 10px;
-    width: 80%;
+    width: 70%;
     margin: 5rem auto;
     box-shadow: 0px 0px 20px var(--dark-greyish-cyan);
 }
@@ -61,6 +61,7 @@ label{
 input{
     all: unset;
     text-align: right;
+    width: 50%;
 }
 .calBox{
     background-color: var(--very-dark-cyan);
@@ -108,18 +109,22 @@ input[type='text']:hover{
 }
 .sum{
     width: 90%;
-    margin: 2rem auto;
+    margin-top: 1.5rem;
 }
 @media screen and (max-width:992px) {
     main{
         grid-template-columns: repeat(1, 1fr);
         width: 80%;
+        padding: 2rem 1rem;
     }
     .mainLeft{
         margin: 1.5rem auto;
     }
+    .sum{
+        margin: 1.5rem auto;
+    }
     .calBox{
-        width: 100%;
+        width: 90%;
         margin: 1rem auto;
     }
     .amount{
@@ -129,13 +134,25 @@ input[type='text']:hover{
 @media screen and (max-width:480px) {
     main{
         width: 90%;
-        margin: 2rem 1rem;
         padding: 2rem 0;
     }
 }
 @media screen and (max-width:370px) {
     .mainLeft div{
-        width: 90%;
+        width: 88%;
         margin: 0 auto;
+    }
+    input{
+        width: 25%;
+    }
+    .sum{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .calBox{
+        width: 85%;
+    }
+    .amount{
+        display: block;
     }
 }

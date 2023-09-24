@@ -16,6 +16,10 @@
 body{
     background-color: var(--light-greyish-cyan)
 }
+.title{
+    text-align: center;
+    margin-top: 2rem;
+}
 main{
     background-color: white;
     align-items: center;
@@ -24,39 +28,39 @@ main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     border-radius: 10px;
-    width: 60rem;
+    width: 80%;
     margin: 5rem auto;
+    box-shadow: 0px 0px 20px var(--dark-greyish-cyan);
 }
 ::placeholder{
     text-align: right;
 }
 .mainLeft{
-    margin: 1.5rem 0;
+    margin: 1rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     font-size: 19px;
-    width: 17rem;
+    width: 90%;
+   
+}
+.mainLeft div{
+    background-color: var(--light-greyish-cyan);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
 }
 label{
     opacity: .4;
     font-weight: 700;
     margin-bottom: 12px;
 }
-input[type='text'] {
-    padding:  5px 10px;
-}
 input{
     all: unset;
-    border: 2px solid var(--light-greyish-cyan);
-    background-color: var(--light-greyish-cyan);
-    border-radius: 5px;
-}
-.small{
-    /* font-size: 10px;
-    color: rgb(143, 48, 48);
-    margin: 3px 0 0 5px;
-    display: none; */
+    text-align: right;
 }
 .calBox{
     background-color: var(--very-dark-cyan);
@@ -86,33 +90,52 @@ input[type='text']:hover{
     border-color: var(--very-dark-cyan);
 }
 .sum:hover{
-    background-color: var(--strong-cyan)
+    background-color: var(--light-greyish-cyan)
 }
-input[type='button']{
+.sum, .reset {
+    all: unset;
     display: block;
     width: 100%;
     font-size: 19px;
     padding: 4px 0;
     border-radius: 7px;
     margin-top: 10px;
-    border-color: var(--very-dark-cyan);
+    border: 2px solid var(--strong-cyan);
     text-align: center;
-    color: var(--very-dark-cyan);
+    color: var(--white);
     cursor: pointer;
+    background-color: var(--strong-cyan);
+}
+.sum{
+    width: 90%;
+    margin: 2rem auto;
 }
 @media screen and (max-width:992px) {
     main{
         grid-template-columns: repeat(1, 1fr);
-        width: 34rem;
+        width: 80%;
     }
     .mainLeft{
         margin: 1.5rem auto;
     }
     .calBox{
-        width: 25rem;
+        width: 100%;
         margin: 1rem auto;
     }
     .amount{
         gap: 5rem;
+    }
+}
+@media screen and (max-width:480px) {
+    main{
+        width: 90%;
+        margin: 2rem 1rem;
+        padding: 2rem 0;
+    }
+}
+@media screen and (max-width:370px) {
+    .mainLeft div{
+        width: 90%;
+        margin: 0 auto;
     }
 }
